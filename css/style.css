@@ -230,7 +230,7 @@ input:focus + label {
   cursor: pointer;
 }
 /* Media Responsive */
-@media (min-width: 320px) {
+@media (max-width: 991px) and (min-width: 320px) {
   /* mainpage */
   .mainpage h1{
     font-size: 4.5rem;
