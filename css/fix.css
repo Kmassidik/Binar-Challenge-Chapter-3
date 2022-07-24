@@ -9,39 +9,39 @@ body {
   background-color: white;
   color: white;
 }
-
+h1 {
+  font-family: Arial;
+  font-weight: 400;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
 h2 {
   font-family: "Bebas Neue", Arial;
   font-weight: bold;
   font-size: 36px;
 }
-
 h3 {
   font-size: 24px;
+  letter-spacing: 2px;
 }
-
 sub {
   font-family: "Open Sans", Arial;
   font-weight: normal;
   font-size: 14px;
 }
-
 button {
   font-family: "Open Sans", Arial;
   font-weight: bold;
   font-size: 16px;
 }
-
 nav{
   font-family: 'Open Sans', sans-serif !important;
   letter-spacing: 1px !important;
   font-weight: 700;
 }
-
 nav a {
   color: white !important;
 }
-
 .hero-button{
   background: linear-gradient(194.68deg, #ffb548 11.27%, #f3af34 90.4%);
   border: none;
@@ -49,10 +49,59 @@ nav a {
   text-align: center;
   text-decoration: none;
   border-radius: 5px;
-  text-transform: uppercase;
   color: black;
   font-weight: bold;
   font-family: Arial;
+}
+.carousel-indicators [data-bs-target] {
+  z-index: 5;
+  margin: 0 20px;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  border: 1.30637px solid #FFFFFF;
+  background-color: rgba(255, 255, 255, 0);
+}
+.carousel-indicators .active {
+  background-color: white;
+}
+.text-bg-binar{
+  font-size: 24px;
+  color: #FFB548;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+/* Timeline */
+ul.timeline {
+  list-style-type: none;
+  position: relative;
+}
+ul.timeline:before {
+  content: " ";
+  background: #d4d9df;
+  display: inline-block;
+  position: absolute;
+  left: 29px;
+  width: 2px;
+  height: 100%;
+  z-index: 400;
+}
+ul.timeline > li {
+  margin: 20px 0;
+  padding-left: 40px;
+}
+ul.timeline > li:before {
+  content: " ";
+  background: white;
+  display: inline-block;
+  position: absolute;
+  border-radius: 50%;
+  border: 3px solid #ffffff;
+  left: 20px;
+  width: 20px;
+  height: 20px;
+  z-index: 400;
 }
 
 /* background image */
@@ -81,10 +130,9 @@ nav a {
 .subsfooter {
   background-image: url(/assets/newsletter.png);
 }
-
 /* typografi */
-
 @media (min-width: 992px) { 
+  /* main */
   .navbar-brand {
     font-size: 24px ;
     padding-right: 130px;
@@ -108,7 +156,6 @@ nav a {
     font-weight: 700;
     line-height: 83px;
     letter-spacing: 3px;
-    text-transform: uppercase;
   }
   .mainpage .flex-column h3 {
     padding-top: 0.5rem;
@@ -122,5 +169,49 @@ nav a {
   }
   .bottom-0 {
     padding-bottom: 1rem;
+  }
+  /* about&gallery*/
+  .aboutgallery .row {
+    padding-top: 10rem;
+  }
+  .aboutgallery .row h3{
+    margin-right: -5rem;
+  }
+  .aboutgallery .row h1 {
+    font-size: 56px;
+    margin-right: -10rem;
+  }
+  .switch-left{
+    padding-right: 0.5rem;
+    margin-left: 6rem;
+  }
+  .switch-right{
+    padding-left: 0.5rem;
+  }
+  /* features */
+  .gamefeature .col h1 {
+    font-size: 56px;
+  }
+  .gamefeature .col {
+    padding-top: 10.5rem;
+  }
+  .gamefeature .header{
+    padding-left: 1.5rem;
+    padding-bottom: 2rem;
+  }
+  .gamefeature a {
+    font-size: 24px;
+    color: #ffb548 !important;
+  }
+  /* systemrequire */
+  .border-sys .col{
+    border: 1px solid #979797;
+    border-color: rgba(255, 255, 255, 15%);
+  }
+  .systemrequire .pt-lg-6{
+    padding-top: 6rem;
+  }
+  .systemrequire h3 {
+    font-size: 14px;
   }
 }
