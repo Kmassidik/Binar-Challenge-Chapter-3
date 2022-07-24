@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
-    <title>Bootstrap Example</title>
+    <title>Landing Page 1440</title>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="/css/style.css">
   </head>
@@ -14,7 +14,7 @@
   </style>
   <body>
     <!-- Header Code -->
-    <nav class="navbar fixed-top navbar-expand-lg py-4" style="background: rgba(0, 0, 0, 0.5)">
+    <nav class="navbar fixed-top navbar-expand-lg py-4">
       <div class="container text-uppercase">
         <a class="navbar-brand" href="#">Logo</a>
         <button class="navbar-toggler border-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -22,7 +22,7 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav me-auto">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link active" aria-current="page" href="#mainpage">Home</a>
             <a class="nav-link active" aria-current="page" href="#">Work</a>
             <a class="nav-link active" aria-current="page" href="#">Contact</a>
             <a class="nav-link active" aria-current="page" href="#">About Me</a>
@@ -35,7 +35,7 @@
       </div>
     </nav>
     <!-- main content -->
-    <section class="content mainpage d-flex align-items-center">
+    <section id="mainpage" class="content mainpage d-flex align-items-center">
       <div class="container-fluid">
         <div class="d-flex justify-content-center">
           <div class="flex-column text-center">
@@ -53,7 +53,7 @@
     <!-- about + gallery -->
     <section class="content aboutgallery">
       <div class="container">
-        <div class="row">
+        <div class="row d-sm-flex text-sm-center">
           <!-- only text -->
           <div class="col-lg-3 col-md-12">
             <h3>What's so special ?</h3>
@@ -125,19 +125,33 @@
     <section class="content systemrequire">
       <div class="container">
         <div class="row pt-lg-6 pb-5">
-          <h3 class="text-center pb-lg-3">Can My Computer Run this game ?</h3>
+          <h3 class="text-center pb-lg-3 pt-sm-5 pb-sm-5">Can My Computer Run this game ?</h3>
           <div class="col pt-lg-5">
-            <h1 class="pb-lg-4">system <br> requirments</h1>
+            <h1 class="pb-lg-4 text-sm-center pb-sm-4">system <br> requirments</h1>
             <div class="row border-sys">
-              <div class="col pb-lg-4"><span class="text-bg-binar">OS:</span><br>Windows 7 64-bit only(No OSX support at this time)</div>
-              <div class="col pb-lg-4"><span class="text-bg-binar">PROCESSOR:</span><br>Intel Core 2 Duo @ 2.4 GHZ or AMD Athlon X2 @ 2.8 GHZ</div>
+              <div class="col pb-lg-4"><span class="text-bg-binar">OS:</span>
+                <br>Windows 7 64-bit only 
+                <br>(No OSX support at this time)
+              </div>
+              <div class="col pb-lg-4"><span class="text-bg-binar">PROCESSOR:</span>
+                <br>Intel Core 2 Duo @ 2.4 GHZ or 
+                <br>AMD Athlon X2 @ 2.8 GHZ
+              </div>
             </div>
             <div class="row border-sys">
-              <div class="col pb-lg-4"><span class="text-bg-binar">mEMORY:</span><br>4 GB RAM</div>
-              <div class="col pb-lg-4"><span class="text-bg-binar">storage:</span><br>8 GB available space</div>
+              <div class="col pb-lg-4"><span class="text-bg-binar">mEMORY:</span>
+                <br>4 GB RAM
+              </div>
+              <div class="col pb-lg-4"><span class="text-bg-binar">storage:</span>
+                <br>8 GB available space
+              </div>
             </div>
             <div class="row border-sys">
-              <div class="col pb-lg-4"><span class="text-bg-binar">GRAPHICS:</span><br>NVIDIA GeForce GTX 660 2GB or AMD Radeon HD 7850 2GB DirectX11 (Shader Model 5)</div>       
+              <div class="col pb-lg-4">
+                <span class="text-bg-binar">GRAPHICS:</span>
+                <br>NVIDIA GeForce GTX 660 2GB or 
+                <br>AMD Radeon HD 7850 2GB DirectX11 (Shader Model 5)
+              </div> 
             </div>
           </div>
           <div class="col-lg"></div>
@@ -148,60 +162,60 @@
     <section class="content pressquotes">
       <div class="container">
         <div class="row d-flex align-items-center pt-6">
-          <div class="col-lg-6 mb-5 ">
+          <div class="col-lg-6 mb-5 text-sm-center p-sm-2">
             <h1>top scores</h1>
-            <p>This top score from various games provided on this platform</p>
+            <p class="pt-sm-3">This top score from various games provided on this platform</p>
             <a href="" class="hero-button">see more</a>
           </div>
-          <div class="col-lg-6">
-            <div class="container">
+          <div class="col-lg-6 col-sm-12">
+            <div class="container d-sm-flex flex-sm-column justify-content-sm-center align-items-sm-center">
               <!-- evan -->
-              <div class="row justify-content-end mb-3">
+              <div class="row justify-content-lg-end mb-3">
                 <div class="card">
-                  <div class="container d-flex">
-                    <img src="/assets/evan-lahti.jpg" alt="acc" class="pt-4">
-                    <div class="me-auto ps-4 pt-4">
-                      <span class="text-bg-binar">Evan lahti<br></span>
-                      <span class="opacity-50">PC Gamers</span>
+                  <div class="container d-flex flex-wrap">
+                    <img src="/assets/aaron-williams.jpg" alt="acc" class="avatar d-flex align-items-end">
+                    <div class="me-auto ps-4 d-flex flex-column">
+                      <span class="text-bg-binar">Aaron Williams</span>
+                      <span class="opacity-50">Uproxx</span>
                     </div>
-                    <img src="/assets/twitter.svg" alt="logo" class="p-0 m-0">
+                    <img src="/assets/twitter.svg" alt="logo" class="">
                   </div> 
-                  <div class="container pt-lg-2  mb-4">
-                    <span>“One of my gaming highlights of the year.”<br></span>
-                    <span class="opacity-50">June 18, 2021</span>
+                  <div class="container pt-lg-2">
+                    <p>“Snoop Dogg Playing The Wildly Entertaining 'SOS' Is Ridiculous.”<br></p>
+                    <span class="opacity-50">December 24, 2018</span>
                   </div>
                 </div>
               </div>
               <!-- jada -->
-              <div class="row justify-content-start mb-3">
+              <div class="row justify-content-lg-start mb-3">
                 <div class="card">
-                  <div class="container d-flex">
-                    <img src="/assets/jada-griffin.jpg" alt="acc" class="pt-4">
-                    <div class="me-auto ps-4 pt-4">
-                      <span class="text-bg-binar">Jada Griffin<br></span>
+                  <div class="container d-flex flex-wrap">
+                    <img src="/assets/jada-griffin.jpg" alt="acc" class="avatar d-flex align-items-end">
+                    <div class="me-auto ps-4 d-flex flex-column">
+                      <span class="text-bg-binar">Jada Griffin </span>
                       <span class="opacity-50">Nerdreactor</span>
                     </div>
-                    <img src="/assets/twitter.svg" alt="logo" class="p-0 m-0">
+                    <img src="/assets/twitter.svg" alt="logo" class="">
                   </div> 
-                  <div class="container pt-lg-2  mb-4">
-                    <span>“The next big thing in the world of streaming and survival games.”<br></span>
+                  <div class="container pt-lg-2">
+                    <p>“The next big thing in the world of streaming and survival games.”<br></p>
                     <span class="opacity-50">July 10, 2021</span>
                   </div>
                 </div>
               </div>
               <!-- Aaron Williams -->
-              <div class="row justify-content-end mb-3">
+              <div class="row justify-content-lg-end mb-3">
                 <div class="card">
-                  <div class="container d-flex">
-                    <img src="/assets/aaron-williams.jpg" alt="acc" class="pt-4">
-                    <div class="me-auto ps-4 pt-4">
-                      <span class="text-bg-binar">Aaron Williams <br></span>
+                  <div class="container d-flex flex-wrap">
+                    <img src="/assets/aaron-williams.jpg" alt="acc" class="avatar d-flex align-items-end">
+                    <div class="me-auto ps-4 d-flex flex-column">
+                      <span class="text-bg-binar">Aaron Williams</span>
                       <span class="opacity-50">Uproxx</span>
                     </div>
-                    <img src="/assets/twitter.svg" alt="logo" class="p-0 m-0">
+                    <img src="/assets/twitter.svg" alt="logo" class="">
                   </div> 
-                  <div class="container pt-lg-2  mb-4">
-                    <span>“Snoop Dogg Playing The Wildly Entertaining ‘SOS’ Is Ridiculous.”<br></span>
+                  <div class="container pt-lg-2">
+                    <p>“Snoop Dogg Playing The Wildly Entertaining 'SOS' Is Ridiculous.”<br></p>
                     <span class="opacity-50">December 24, 2018</span>
                   </div>
                 </div>
@@ -215,78 +229,79 @@
     <section class="content subsfooter">
       <div class="container">
         <div class="row py-5">
-          <div class="col text-center">
-            <img src="/assets/skull.png" alt="" class="skull" />
+          <div class="col-lg-6 col-md-12 text-center">
+            <div class="container">
+              <img class="skull" src="/assets/skull.png" alt="gambar"/>
+            </div>
           </div>
           <div class="col my-auto">
-            <p class="text-capitalize head">want to stay in <br> touch ?</p>
-            <h1 class="text-uppercase">newsletter <br> SUBSCRIBE</h1>
-            <p class="konten">
-              In order to start receiving our news, all you have to do is enter
-              your email address. Everything else will be taken care of by us.
-              We will send you emails containing information about game. We
-              don’t spam.
+            <h3 class="mb-2 text-sm-center">Want to stay in <br> touch ?</h3>
+            <h1 class="mb-2 text-sm-center">newsletter <br> SUBSCRIBE</h1>
+            <p class="konten text-sm-center">
+              In order to start receiving our news, 
+              all you have to do is enter your email address. 
+              Everything else will be taken care of by us. 
+              We will send you emails containing information about game. 
+              We don't spam.
             </p>
               <div class="row">
-                <div class="col-6">
+                <div class="col-lg-7">
                   <form>
                     <div class="field">
-                      <input style="font-size: 12px; background-color: #1c1e1f; color: #ffb548;  border-bottom: none !important;" type="text" name="fullname" id="fullname" value="youremail@binar.co,id"/>
+                      <input style="font-size: 12px; background-color: #1c1e1f; color: #ffb548;  border-bottom: none !important;" type="text" name="fullname" id="fullname" value="youremail@binar.co.id"/>
                       <label class="text-capitalize" style="font-size: 12px; color: #7b7c7d" for="fullname">your email address</label>
                     </div>
                   </form>
                 </div>
-                <div class="col hero-button">
-                  <a role="button" class="text-decoration-none text-dark text-arial">Subscribe now</a>
+                <div class="col-lg-5">
+                  <a role="button" class="button-email d-flex justify-content-center align-items-center hero-button text-dark">Subscribe now</a>
                 </div>
               </div>
-            
           </div>
         </div>
       </div>
       <!-- footer -->
       <footer class="mt-5">
-        <div class="container text-uppercase pb-4" style="font-size: 12px">
-          <div class="row">
-            <div class="col-9 float-start mb-4 text-right" style="padding-right: 0">
-              <a href="" class="fw-bold" style="color: white">home</a>
-              <a href="" class="fw-bold" style="margin-left: 24px; color: white">about</a>
-              <a href="" class="fw-bold" style="margin-left: 24px; color: white">game features</a>
-              <a href="" class="fw-bold" style="margin-left: 24px; color: white">system requirements</a>
-              <a href="" class="fw-bold" style="margin-left: 24px; color: white">quotes</a>
+        <div class="container text-uppercase">
+          <div class="row d-flex pb-4">
+            <div class="col-lg-1"></div>
+            <div class="col-8 d-lg-flex">
+              <a href="" class="fw-bold px-lg-2 px-md-0">home</a>
+              <a href="" class="fw-bold px-lg-2 px-md-0">about</a>
+              <a href="" class="fw-bold px-lg-2 px-md-0">game features</a>
+              <a href="" class="fw-bold px-lg-2 px-md-0">system requirements</a>
+              <a href="" class="fw-bold px-lg-2 px-md-0">quotes</a>
             </div>
-            <div class="col-3 float-end text-right" style="padding-right: 0">
-              <a href="">
+            <div class="col-3 d-lg-flex justify-content-between">
+              <a href="" class="">
                 <img src="/assets/facebook.svg" alt="facebook" />
               </a>
-              <a href="" style="margin-left: 34px">
+              <a href="" class="">
                 <img src="/assets/twitter2.svg" alt="twitter" />
               </a>
-              <a href="" style="margin-left: 24px">
+              <a href="" class="">
                 <img src="/assets/vector.svg" alt="youtube" />
               </a>
-              <a style="margin-left: 24px">
+              <a class="">
                 <img src="/assets/twitch.svg" alt="twitch" />
               </a>
             </div>
           </div>
           <div class="border w-100 d-flex"></div>
-          <div class="row mt-4">
-            <div class="col text-capitalize" style="color: #7b7c7d">
+          <div class="row pt-2 pb-3 d-flex">
+            <div class="col d-lg-flex text-capitalize opacity-25 justify-content-lg-start">
               © 2018 Your Games, Inc. All Rights Reserved
             </div>
-            <div class="col text-right">
-              <a href="" class="fw-bold" style="color: white">Privacy Policy</a>
-              |
-              <a href="" class="fw-bold" style="color: white">Terms of Services</a>
-              |
-              <a href="" class="fw-bold" style="color: white">Code of Conduct</a>
+            <div class="col d-flex justify-content-end small">
+              <a href="" class="fw-bold d-flex align-items-center">Privacy Policy</a>
+              <span>&nbsp;|&nbsp;</span> 
+              <a href="" class="fw-bold d-flex align-items-center">Terms of Services</a>
+              <span>&nbsp;|&nbsp;</span>
+              <a href="" class="fw-bold d-flex align-items-center">Code of Conduct</a>
             </div>
           </div>
         </div>
       </footer>
     </section>
-    
-    <!-- End Example Code -->
   </body>
 </html>
