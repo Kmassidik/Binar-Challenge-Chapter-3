@@ -139,6 +139,12 @@ ul.timeline > .not-acitve:before {
 .subsfooter {
   background-image: url(/assets/newsletter.png);
 }
+/* tambahan */
+.pressquotes .card {
+  background: rgba(255, 255, 255, 0.08);
+  width: 24.5rem !important;
+  height: 11rem !important;
+}
 /* typografi */
 @media (min-width: 992px) { 
   /* main */
@@ -225,9 +231,76 @@ ul.timeline > .not-acitve:before {
   }
   /* press & quotes */
   .pressquotes .pt-6{
-    padding-top: 159px;
+    padding: 10rem 0;
   }
-  .pressquotes .card {
-    background: rgba(255, 255, 255, 0.08);
+  /* subs footer */
+  .subsfooter div > a {
+    text-decoration: none;
   }
+  .skull{
+    width: 300px;
+  }
+  .subsfooter .head {
+    font-size: 18px; 
+    width: 30%
+  } 
+  .konten {
+    font-size: 16px;
+  }
+  .subsfooter .hero-button{
+    
+  }
+}
+/* form input */
+.field {
+  display: flex;
+  flex-flow: column-reverse;
+  margin-bottom: 1em;
+  background-color: #1c1e1f;
+  border-radius: 5px;
+  padding: 10px;
+}
+label,
+input {
+  transition: all 0.2s;
+  touch-action: manipulation;
+}
+input {
+  font-size: 1.5em;
+  border: 0;
+  border-bottom: 1px solid #ccc;
+  font-family: inherit;
+  -webkit-appearance: none;
+  border-radius: 0;
+  padding: 0;
+  cursor: text;
+}
+input:focus {
+  outline: 0;
+  border-bottom: 1px solid #666;
+}
+label {
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+input:placeholder-shown + label {
+  cursor: text;
+  max-width: 66.66%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transform-origin: left bottom;
+  transform: translate(0, 2.125rem) scale(1.5);
+}
+::-webkit-input-placeholder {
+  opacity: 0;
+  transition: inherit;
+}
+input:focus::-webkit-input-placeholder {
+  opacity: 1;
+}
+input:not(:placeholder-shown) + label,
+input:focus + label {
+  transform: translate(0, 0) scale(1);
+  cursor: pointer;
 }
