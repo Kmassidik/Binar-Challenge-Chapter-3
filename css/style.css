@@ -187,9 +187,8 @@ input {
   touch-action: manipulation;
 }
 input {
-  font-size: 1.5rem;
+  font-size: 12px;
   border: 0;
-  border-bottom: 1px solid #ccc;
   font-family: inherit;
   -webkit-appearance: none;
   border-radius: 0;
@@ -204,7 +203,7 @@ input:focus {
   border-bottom: 1px solid #666;
 }
 label {
-  text-transform: uppercase;
+  text-transform: uppercase !important;
   letter-spacing: 0.05em;
   font-size: 12px; color: #7b7c7d
 }
@@ -232,9 +231,12 @@ input:focus + label {
 /* Media Responsive */
 @media (max-width: 575px) and (min-width: 0px) {
   /* mainpage */
+  .py-xs-4 {
+    padding: 0 1rem;
+  }
   .mainpage h1{
-    font-size: 4.5rem;
-    font-weight: 700;
+    font-size: 2.8rem;
+    font-weight: 600;
     line-height: 83px;
     letter-spacing: 3px;
   }
@@ -247,6 +249,10 @@ input:focus + label {
   .mainpage .position-absolute h3{
     font-size: 12px;
     text-transform: uppercase;
+  }
+  .story-xs{
+    position: relative !important;
+    display: flex;
   }
   /* about gallery */
   .aboutgallery h3{
@@ -268,18 +274,20 @@ input:focus + label {
     padding-top: 3.5rem;
   }
   ul.timeline:before {
-    height: 10.3rem;
+    height: 11.8rem;
   }
   /* system require */
   .systemrequire .container{
     padding: 9rem 1rem;
   }
   .systemrequire .py-xs{
-    padding: 1.5rem 0;
+    padding: 1rem 0;
   }
-  .hidden-xs{
+  .hidden-xs, 
+  .hidden-xs-1{
     display: none;
   }
+  
   .px-xs{
     padding: 0 2rem;
   }
@@ -308,6 +316,22 @@ input:focus + label {
   }
 }
 @media (max-width: 767px) and (min-width: 576px) {
+  .mainpage h1{
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 83px;
+    letter-spacing: 3px;
+  }
+  .mainpage .flex-column h3 {
+    padding-top: 0.5rem;
+    padding-bottom: 3.5rem;
+    font-weight: 400;
+    letter-spacing: 2px;
+  }
+  .mainpage .position-absolute h3{
+    font-size: 12px;
+    text-transform: uppercase;
+  }
   ul.timeline:before {
     height: 16.4rem;
   }
@@ -316,6 +340,11 @@ input:focus + label {
   }
   .hidden-xs{
     display: none;
+  }
+  .border-sys .col{
+    border-bottom: unset;
+    border: 1px solid #979797;
+    border-color: rgba(255, 255, 255, 15%);
   }
 }
 @media (max-width: 991px) and (min-width: 768px) {
@@ -343,6 +372,11 @@ input:focus + label {
   }
   .hidden-xs{
     display: none;
+  }
+  .border-sys .col{
+    border-bottom: unset;
+    border: 1px solid #979797;
+    border-color: rgba(255, 255, 255, 15%);
   }
 }
 @media (min-width: 992px) { 

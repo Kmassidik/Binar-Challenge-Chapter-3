@@ -14,7 +14,7 @@
   </style>
   <body>
     <!-- Header Code -->
-    <nav class="navbar fixed-top navbar-expand-lg py-4">
+    <nav class="navbar fixed-top navbar-expand-lg py-4 py-xs-4">
       <div class="container text-uppercase">
         <a class="navbar-brand" href="#">Logo</a>
         <button class="navbar-toggler border-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -44,7 +44,7 @@
             <a role="button" href="" class="hero-button text-uppercase">play now</a>
           </div>
         </div>
-        <div class="position-absolute bottom-0 start-50 translate-middle-x text-center">
+        <div class="position-absolute bottom-0 start-50 translate-middle-x text-center hidden-xs-1">
           <a href="#aboutgallery" class="text-decoration-none text-white">
             <h3>the story</h3>
             <img src="/assets/scroll-down.svg" alt="show-more" />
@@ -237,8 +237,12 @@
             </div>
           </div>
           <div class="col my-auto">
-            <h3 class="mb-2 text-xs-center text-sm-center text-lg-start">Want to stay in <br class="hidden-xs"> touch ?</h3>
-            <h1 class="mb-2 text-xs-center text-sm-center text-lg-start">newsletter <br class="hidden-xs"> SUBSCRIBE</h1>
+            <h3 class="mb-2 text-xs-center text-sm-center text-lg-start">
+              Want to stay in <br class="hidden-xs"> touch ?
+            </h3>
+            <h1 class="mb-2 text-xs-center text-sm-center text-lg-start">
+              newsletter <br class="hidden-xs"> SUBSCRIBE
+            </h1>
             <p class="konten text-sm-center text-lg-start">
               In order to start receiving our news, 
               all you have to do is enter your email address. 
@@ -246,19 +250,21 @@
               We will send you emails containing information about game. 
               We don't spam.
             </p>
-              <div class="row">
-                <div class="col-lg-7">
-                  <form>
-                    <div class="field">
-                      <input style="font-size: 12px; background-color: #1c1e1f; color: #ffb548;  border-bottom: none !important;" type="text" name="fullname" id="fullname" value="youremail@binar.co.id"/>
-                      <label class="text-capitalize" style="font-size: 12px; color: #7b7c7d" for="fullname">your email address</label>
-                    </div>
-                  </form>
-                </div>
-                <div class="col-lg-5">
-                  <a role="button" class="button-email d-flex justify-content-center align-items-center hero-button text-dark">Subscribe now</a>
-                </div>
+            <div class="row">
+              <div class="col-lg-7">
+                <form>
+                  <div class="field">
+                    <input type="text" name="fullname" id="fullname" value="youremail@binar.co.id"/>
+                    <label class="text-capitalize">your email address</label>
+                  </div>
+                </form>
               </div>
+              <div class="col-lg-5">
+                <a role="button" class="button-email d-flex justify-content-center align-items-center hero-button text-dark">
+                  Subscribe now
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
