@@ -1,6 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&display=swap');
 
+a:hover{
+  color: white !important;
+}
 /* Wajib */
 body {
   font-family: Arial;
@@ -72,10 +75,10 @@ nav a {
   text-decoration: none;
 }
 .quotes{
-background-color: rgba(255, 255, 255, 20%);
-border-radius: 5px;
-width: 28rem;
-height: 10rem;
+  background-color: rgba(255, 255, 255, 20%);
+  border-radius: 5px;
+  width: 28rem;
+  height: 10rem;
 }
 .content{
   margin: 0;
@@ -162,6 +165,11 @@ ul.timeline > .not-acitve:before {
   color: white;
 }
 .skull{
+  background: radial-gradient(
+    45.43% 53.19% at 50% 50%, 
+    rgba(255, 255, 255, 0) 0%, 
+    rgba(0, 0, 0, 0) 46.15%, 
+    #080A0B 99.74%);
   width: 15rem;
 }
 
@@ -276,6 +284,15 @@ input:focus + label {
   ul.timeline:before {
     height: 11.8rem;
   }
+  .gamefeature .header{
+    padding-left: 1.5rem;
+  }
+  .header h3{
+    padding-left: 3rem;
+  }
+  .header h1{
+    padding-left: 3rem;
+  }
   /* system require */
   .systemrequire .container{
     padding: 9rem 1rem;
@@ -314,8 +331,20 @@ input:focus + label {
   .pressquotes .py-xs{
     padding-top: 5rem;
   }
+  .d-xs-flex{
+    display: flex !important;
+  }
+  .column-xs-reverse{
+    flex-direction: column-reverse !important;
+  }
 }
 @media (max-width: 767px) and (min-width: 576px) {
+  .header h3{
+    padding-left: 4.3rem;
+  }
+  .header h1{
+    padding-left: 4.3rem;
+  }
   .mainpage h1{
     font-size: 3rem;
     font-weight: 700;
@@ -346,8 +375,23 @@ input:focus + label {
     border: 1px solid #979797;
     border-color: rgba(255, 255, 255, 15%);
   }
+  .column-xs-reverse{
+    flex-direction: column-reverse !important;
+  }
+  .px-xs{
+    padding: 0 2rem;
+  }
+  .subsfooter .item-xs-center a {
+    margin: 0 1rem;
+  }
 }
 @media (max-width: 991px) and (min-width: 768px) {
+  .header h3{
+    padding-left: 4.3rem;
+  }
+  .header h1{
+    padding-left: 4.3rem;
+  }
   ul.timeline:before {
     height: 13.4rem;
   }
@@ -377,6 +421,24 @@ input:focus + label {
     border-bottom: unset;
     border: 1px solid #979797;
     border-color: rgba(255, 255, 255, 15%);
+  }
+  .px-xs{
+    padding: 0 2rem;
+  }
+  .column-xs-reverse{
+    flex-direction: column-reverse !important;
+  }
+  .subsfooter .item-xs-center a {
+    margin: 0 1rem;
+  }
+  .switch-left{
+    padding-right: 0.5rem;
+  }
+  .switch-right{
+    padding-left: 0.5rem;
+  }
+  .aboutgallery .row {
+    padding: 2rem 0;
   }
 }
 @media (min-width: 992px) { 
@@ -511,5 +573,5 @@ input:focus + label {
   .pressquotes{
     min-height: 0;
   }
- }
+}
 @media (min-width: 1400px) {  }
